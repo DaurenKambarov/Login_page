@@ -4,6 +4,7 @@ import 'package:flutter_application_1/firebase_options.dart';
 import 'package:flutter_application_1/src/features/authentification/screens/welcome_screen.dart';
 import 'package:flutter_application_1/src/repository/auth_repository.dart';
 import 'package:get/get.dart';
+import './src/features/authentification/screens/map.dart';
 
 
 void main(){
@@ -87,7 +88,10 @@ class AppHome extends StatelessWidget {
                 backgroundColor: Theme.of(context).colorScheme.primary,
                 foregroundColor: Theme.of(context).colorScheme.onPrimary
               ),
-              onPressed: () {}, 
+              onPressed: () { Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Map()),
+                );}, 
               child: const Text("Login",),),
             OutlinedButton(
               style: ElevatedButton.styleFrom(
