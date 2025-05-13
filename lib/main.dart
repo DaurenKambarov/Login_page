@@ -80,8 +80,8 @@ class AppHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(  
           children: [
-            Text("Welcome to our application", style: Theme.of(context).textTheme.headline2),
-            Text("Choose way to enter", style: Theme.of(context).textTheme.subtitle1,),
+            Text("Welcome to our application", style: Theme.of(context).textTheme.headlineMedium),
+            Text("Choose way to enter", style: Theme.of(context).textTheme.titleMedium,),
             // Text("Paragraph", style: Theme.of(context).textTheme.bodyText1,),
             ElevatedButton(
               style: ElevatedButton.styleFrom(

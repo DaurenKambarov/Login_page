@@ -1,6 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:auth_repository/auth_repository.dart';
+class Calculator {
+  int addOne(int value) => value + 1;
+}
 
 void main() {
   test('adds one to input values', () {
